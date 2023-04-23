@@ -49,6 +49,11 @@ const JSX = () => {
       color: white;
     }
   `
+
+  const handleClick = (text: string) => {
+    console.log({ message: 'handleClick関数が動いてます！', 送られてきたtext: text })
+    alert('クリックされました！')
+  }
   return (
     <div>
       <StyledBox>aaaa</StyledBox>
@@ -59,7 +64,13 @@ const JSX = () => {
         <StyledBlueText>aaa</StyledBlueText>
       </CenteredBlockBox>
       <MarginTopBox>
-        <BorderButton>ボタン</BorderButton>
+        <BorderButton
+          onClick={() => {
+            alert('クリックされました！')
+          }}
+        >
+          ボタン
+        </BorderButton>
       </MarginTopBox>
     </div>
   )
