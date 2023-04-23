@@ -4,6 +4,8 @@ const JSX = () => {
   // styledコンポーネント例
   // 文字色黄色、背景色青
   const StyledBox = styled.div`
+    width: 40%;
+    height: 40%;
     color: #ffea00;
     background-color: #4c03f4;
     margin-top: 20px;
@@ -11,6 +13,7 @@ const JSX = () => {
 
   // 要素の表示位置を指定しつつ、テキストカラーを薄緑にして左寄せ
   const LeftRightGreenBox = styled.div`
+    width: 500px;
     text-align: left;
     background-color: #05f6aa;
     margin-top: 40px;
@@ -56,12 +59,12 @@ const JSX = () => {
   }
   return (
     <div>
-      <StyledBox>aaaa</StyledBox>
+      <StyledBox>イエローテキスト</StyledBox>
       <LeftRightGreenBox>
         <StyledBlueText>ブルーテキスト</StyledBlueText>
       </LeftRightGreenBox>
       <CenteredBlockBox>
-        <StyledBlueText>aaa</StyledBlueText>
+        <StyledBlueText>ブルーテキスト</StyledBlueText>
       </CenteredBlockBox>
       <MarginTopBox>
         <BorderButton
