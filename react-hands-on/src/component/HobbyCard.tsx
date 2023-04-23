@@ -1,5 +1,5 @@
 import { Button, Card, CardBody, CardFooter, CardHeader, Center, Heading, Text } from '@chakra-ui/react'
-import React, { ReactElement } from 'react'
+import React from 'react'
 
 type Props = {
   headingText: string

@@ -1,24 +1,5 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Center,
-  Flex,
-  Heading,
-  Icon,
-  Image,
-  SimpleGrid,
-  Stack,
-  Text
-} from '@chakra-ui/react'
+import { Avatar, Box, Button, Center, Flex, Heading, Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import HobbyCard from 'component/HobbyCard'
-import { FcDonate, FcInTransit } from 'react-icons/fc'
-import { BiBowlRice } from 'react-icons/bi'
-import { GiBowlOfRice } from 'react-icons/gi'
 
 const Chakra = () => {
   return (
