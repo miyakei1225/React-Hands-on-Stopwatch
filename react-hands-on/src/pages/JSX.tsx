@@ -1,3 +1,5 @@
+import { Button, FormLabel, Input, VStack } from '@chakra-ui/react'
+import { useState } from 'react'
 import styled from 'styled-components'
 
 const JSX = () => {
@@ -57,6 +59,15 @@ const JSX = () => {
     console.log({ message: 'handleClick関数が動いてます！', 送られてきたtext: text })
     alert('クリックされました！')
   }
+
+  const [name, setName] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleChakraFormClick = () => {
+    console.log({ name, password })
+    setName('')
+    setPassword('')
+  }
   return (
     <div>
       <StyledBox>イエローテキスト</StyledBox>
@@ -66,6 +77,40 @@ const JSX = () => {
       <CenteredBlockBox>
         <StyledBlueText>ブルーテキスト</StyledBlueText>
       </CenteredBlockBox>
+      <VStack>
+        <VStack w="30vw">
+          <FormLabel htmlFor="name">First name</FormLabel>
+          <Input id="name" placeholder="name" value={name} onChange={(e) => setName(e.target.value)} />
+
+          <FormLabel htmlFor="password">Password</FormLabel>
+          <Input
+            id="password"
+            placeholder="password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          <Button mt={4} colorScheme="teal" onClick={handleChakraFormClick}>
+            Submit
+          </Button>
+        </VStack>
+      </VStack>
+      <MarginTopBox>
+        <form>
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <input
+            type="submit"
+            value="Sign In"
+            onSubmit={() => {
+              // 送信後の処理を記述する
+            }}
+          />
+        </form>
+      </MarginTopBox>
       <MarginTopBox>
         <BorderButton
           onClick={() => {
