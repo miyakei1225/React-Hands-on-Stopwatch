@@ -60,6 +60,7 @@ const JSX = () => {
     alert('クリックされました！')
   }
 
+  // useState(後ほど説明します🙆)
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
 
