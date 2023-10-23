@@ -59,8 +59,4 @@ npm start
 <img width="513" alt="スクリーンショット 2023-04-22 23 39 07" src="https://user-images.githubusercontent.com/65134351/233791130-b2c2192f-77f0-4c87-a6fe-e29bdbebe572.png">
 
 ### 6. 環境構築完了🙌
-localhost:3000/homeにアクセスし、以下の画面が表示出来れば環境構築終了です！構築お疲れ様でした💪
-<img width="1455" alt="スクリーンショット 2023-04-23 19 27 38" src="https://user-images.githubusercontent.com/65134351/233834463-b0f7be9f-4428-4b0a-80db-e392aff977d7.png">
-
-
-
+localhost:3000/homeにアクセスし、画面が表示出来れば環境構築終了です！構築お疲れ様でした💪
