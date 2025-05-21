@@ -27,16 +27,12 @@ const StopwatchExample = () => {
   }
 
   return (
-    <div>
-      <div>{(time / 1000).toFixed(2)} s</div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
+      <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{(time / 1000).toFixed(2)} s</div>
       <div>
-        <button onClick={handleStart}>Start</button>
-      </div>
-      <div>
-        <button onClick={handleStop}>Stop</button>
-      </div>
-      <div>
-        <button onClick={handleReset}>Reset</button>
+        <button onClick={handleStart} style={{ margin: '0 5px' }}>Start</button>
+        <button onClick={handleStop} style={{ margin: '0 5px' }}>Stop</button>
+        <button onClick={handleReset} style={{ margin: '0 5px' }}>Reset</button>
       </div>
     </div>
   )
